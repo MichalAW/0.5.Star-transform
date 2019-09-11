@@ -1,0 +1,102 @@
+body {
+    background-color: #ADFF2F;
+}
+
+.hero {
+    text-align: center;
+}
+
+/*Stars*/
+.star8 {
+    display: inline-block;
+    margin: 2em;
+    transform: rotate(22deg);
+    transition: background linear .4s;
+    text-align: left;
+}
+
+.star8::before {
+    background-color: white;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: rotate(45deg);
+}
+
+.star8,
+.star8::before,
+i.fa {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.gold,
+.gold::before {
+    border: 6px solid #ffc107;
+}
+
+.red,
+.red::before {
+    border: 6px solid #fd7e33;
+}
+
+.blue,
+.blue::before {
+    border: 6px solid #3fb0ac;
+}
+
+.fa {
+    margin: 0;
+    position: absolute;
+    background-color: white;
+    font-size: 60px;
+}
+
+.fa::before {
+    transform: rotate(-22deg);
+    position: absolute;
+    margin: 10px;
+}
+
+/*Icons*/
+.gold:hover::before,
+.gold:hover,
+.gold:hover i.fa {
+    background-color: #ffc107;
+    color: #FFF;
+}
+
+.red:hover::before,
+.red:hover,
+.red:hover i.fa {
+    background-color: #fd7e33;
+    color: #FFF;
+}
+
+.blue:hover::before,
+.blue:hover,
+.blue:hover i.fa {
+    background-color: #3fb0ac;
+    color: #FFF;
+}
+
+/*Stars animation*/
+.gold,
+.gold::before,
+.gold i.fa {
+    transition: ease-in-out .4s;
+}
+
+.red,
+.red::before,
+.red i.fa {
+    transition: ease-in-out .4s;
+}
+
+.blue,
+.blue::before,
+.blue i.fa {
+    transition: ease-in-out .4s;
+}
